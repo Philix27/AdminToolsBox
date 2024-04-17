@@ -58,8 +58,11 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "admin_tools",
-        "width": 800
+        "title": "Server manager",
+        "width": 800,
+        "minWidth": 800,
+        "minHeight": 600
+
       }
     ]
   }

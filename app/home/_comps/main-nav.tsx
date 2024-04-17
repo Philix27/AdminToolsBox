@@ -3,10 +3,6 @@
 import * as React from "react"
 import Link from "next/link"
 import { NavItem, cn } from "@/lib"
-import { useAddress } from "@thirdweb-dev/react"
-import { ConnectButton } from "thirdweb/react"
-
-import { ThirdClient } from "@/lib/thirdweb"
 import { Icons } from "@/app/comps"
 
 import { siteConfig } from "./site"
@@ -41,8 +37,7 @@ export function MainNav({ items }: MainNavProps) {
                 </Link>
               )
           )} */}
-          {/* {isLoggedIn ? (
-            <Link
+         <Link
               href={"/dashboard"}
               className={cn(
                 "flex items-center text-sm font-medium text-muted-foreground"
@@ -50,15 +45,6 @@ export function MainNav({ items }: MainNavProps) {
             >
               Dashboard
             </Link>
-          ) : (
-            <ConnectButton
-              client={ThirdClient}
-              appMetadata={{
-                name: siteConfig.name,
-                url: "http://localhost:3300",
-              }}
-            />
-          )} */}
         </nav>
       ) : null}
     </div>
