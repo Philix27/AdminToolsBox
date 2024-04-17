@@ -1,7 +1,9 @@
 "use client"
 
 import React from "react"
+import { Button } from "@/comps"
 import { AppImg } from "@/lib"
+import { TauriFn } from "@/tauri/fn"
 
 import { SiteHeader } from "./_comps"
 import FooterSection from "./footer"
@@ -10,6 +12,7 @@ import HeroCenter from "./heroC"
 import JumbutronSection from "./jumbutron"
 
 export default function HomeClient() {
+  const fn = new TauriFn()
   return (
     <div>
       <SiteHeader />
@@ -18,6 +21,13 @@ export default function HomeClient() {
           title={"Budget & Invoice manager"}
           subtitle={`Create and manage all your cryptocurrency based expenses. Send and track invoices.`}
         />
+        <Button
+          onClick={() => {
+            fn.greet({ name: "Philix" })
+          }}
+        >
+          Click me
+        </Button>
         <HeroSection
           img={AppImg.chain}
           title={"Expense management"}
