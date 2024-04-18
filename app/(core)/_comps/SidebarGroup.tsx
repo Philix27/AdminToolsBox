@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowDown, ArrowUp } from "lucide-react"
+import { ArrowDownIcon, ArrowUpIcon } from "lucide-react"
 
 import { TextB, TextH } from "@/app/comps"
 
@@ -21,7 +21,7 @@ export function SidebarGroup(params: { section: ISection }) {
         <TextH className={"text-muted-foreground"} v="h5">
           {params.section.title}
         </TextH>
-        {isOpen ? <ArrowDown size={15} /> : <ArrowUp size={15} />}
+        {isOpen ? <ArrowDownIcon size={13.5} /> : <ArrowUpIcon size={13.5} />}
       </div>
       {isOpen &&
         params.section.group.map((val, i) => (

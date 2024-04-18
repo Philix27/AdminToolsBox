@@ -15,53 +15,86 @@ export const data: ISection[] = [
         name: "Overview",
         link: AppPages.dashboard,
       },
-      {
-        name: "Profile",
-        link: AppPages.settings,
-      },
-      {
-        name: "Settings",
-        link: AppPages.settings,
-      },
     ],
   },
   {
-    title: "Invoice",
+    title: "Frontend",
     group: [
       {
-        name: "All",
-        link: AppPages.invoice.new,
+        name: "Storybook",
+        link: AppPages.frontend.storybook,
       },
       {
-        name: "Create New",
-        link: AppPages.invoice.new,
+        name: "Cypress",
+        link: AppPages.frontend.cypress,
+      },
+      {
+        name: "Vitest",
+        link: AppPages.frontend.vitest,
+      },
+      {
+        name: "Github Actions",
+        link: AppPages.frontend.githubActions,
+      },
+      {
+        name: "Graphql",
+        link: AppPages.frontend.graphql,
       },
     ],
   },
 
   {
-    title: "Budget",
+    title: "Backend",
     group: [
       {
-        name: "Manage",
-        link: AppPages.paymentLink,
+        name: "Jest",
+        link: AppPages.backend.test,
       },
       {
-        name: "Create New",
-        link: AppPages.paymentLink,
+        name: "Graphql",
+        link: AppPages.backend.graphql,
+      },
+      {
+        name: "Providers",
+        link: AppPages.backend.providers,
+      },
+      {
+        name: "Sentry",
+        link: AppPages.backend.sentry,
       },
     ],
   },
   {
-    title: "Transactions",
+    title: "Databases",
     group: [
       {
-        name: "Crypto",
-        link: AppPages.transactionsCrypto,
+        name: "Postgres",
+        link: AppPages.database.postgres,
       },
       {
-        name: "Fiat",
-        link: AppPages.transactionsFiat,
+        name: "Mysql",
+        link: AppPages.database.mysql,
+      },
+      {
+        name: "MongoDb",
+        link: AppPages.database.mongodb,
+      },
+      {
+        name: "MariaDb",
+        link: AppPages.database.mariadb,
+      },
+    ],
+  },
+  {
+    title: "Others",
+    group: [
+      {
+        name: "Repositories",
+        link: AppPages.repositories,
+      },
+      {
+        name: "Integrations",
+        link: AppPages.integrations,
       },
     ],
   },

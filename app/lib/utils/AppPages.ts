@@ -1,14 +1,28 @@
 export class AppPages {
   static dashboard = "/dashboard"
-  static budgets = "/budgets"
-  static invoice = {
-    new: "/invoice/new",
-    all: "/invoice/all",
+  static repositories = "/repositories"
+  static integrations = "/integrations"
+
+  static frontend = {
+    storybook: "/frontend/storybook",
+    vitest: "/frontend/vitest",
+    cypress: "/frontend/cypress",
+    sentry: "/frontend/sentry",
+    githubActions: "/frontend/github",
+    graphql: "/frontend/gql",
+    restApi: "/frontend/gql",
   }
-  static paymentLink = "/payment-links"
-  static transactions = "/transactions"
-  static transactionsCrypto = "/transactions/crypto"
-  static transactionsFiat = "/transactions/fiat"
-  static settings = "/settings"
-  static wallet = "/wallet"
+
+  static backend = {
+    providers: "/backend/storybook",
+    test: "/backend/vitest",
+    graphql: "/backend/graphql",
+    sentry: "/backend/sentry",
+  }
+  static database = {
+    postgres: "/database/postgres",
+    mysql: "/database/mysql",
+    mongodb: "/database/mongodb",
+    mariadb: "/database/mariadb",
+  }
 }
