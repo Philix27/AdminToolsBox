@@ -4,6 +4,8 @@ import "@/lib/styles/globals.css"
 import { cn, fontSans } from "@/lib"
 import { ThemeProvider } from "next-themes"
 
+import { SiteHeader } from "./home/_comps"
+
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -20,7 +22,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="relative flex min-h-screen flex-col">
-            <div className="flex-1">{children}</div>
+            <div className="flex-1">
+              <SiteHeader />
+              {children}
+            </div>
           </div>
 
           {/* <TailwindIndicator /> */}

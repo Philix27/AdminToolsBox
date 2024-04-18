@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@/lib"
+import { StylesUtils, cn } from "@/lib"
 import { motion } from "framer-motion"
 
 import { data } from "./SidebarData"
@@ -15,7 +15,7 @@ export function SidebarMobile(props: { className?: string }) {
       border-secondary md:hidden fixed`,
         props.className
       )}
-      style={{ height: "calc(100vh - 70px)" }}
+      style={{ height: `calc(100vh - ${StylesUtils.navbarHeight})` }}
     >
       <motion.div
         initial={{ x: -40, opacity: 0 }}

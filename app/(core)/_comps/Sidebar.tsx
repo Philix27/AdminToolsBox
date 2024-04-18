@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { cn } from "@/lib"
+import { StylesUtils, cn } from "@/lib"
 import { ArrowDown, ArrowUp } from "lucide-react"
 
 import { TextB, TextH } from "@/app/comps"
@@ -15,11 +15,11 @@ export function Sidebar(props: { className?: string }) {
     <div
       className={cn(
         `
-        w-[272px] border-l-[2px] bg-primary py-4 hidden md:block
+        w-[270px] border-l-[2px] bg-primary py-4 hidden md:block
         border-r-2 border-secondary`,
         props.className
       )}
-      style={{ height: "calc(100vh - 70px)" }}
+      style={{ height: `calc(100vh - ${StylesUtils.navbarHeight})` }}
     >
       {data.map((item, i) => (
         <div key={i}>
