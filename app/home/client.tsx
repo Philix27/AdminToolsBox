@@ -3,7 +3,7 @@
 import React from "react"
 import { Button } from "@/comps"
 import { AppImg } from "@/lib"
-import { TauriFn } from "@/tauri/fn"
+import { TauriFn } from "@/lib/tauri/fn"
 
 import { SiteHeader } from "./_comps"
 import FooterSection from "./footer"
