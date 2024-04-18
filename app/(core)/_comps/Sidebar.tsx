@@ -3,11 +3,11 @@
 import { useState } from "react"
 import Link from "next/link"
 import { AppPages, StylesUtils, cn } from "@/lib"
-import { ArrowDown, ArrowUp, LayoutDashboard } from "lucide-react"
+import { LayoutDashboard } from "lucide-react"
 
-import { TextB, TextH } from "@/app/comps"
+import { TextH } from "@/app/comps"
 
-import { ISection, data } from "./SidebarData"
+import { data } from "./SidebarData"
 import { SidebarGroup } from "./SidebarGroup"
 
 export function Sidebar(props: { className?: string }) {
@@ -22,18 +22,18 @@ export function Sidebar(props: { className?: string }) {
       style={{ height: `calc(100vh - ${StylesUtils.navbarHeight})` }}
     >
       <Link href={AppPages.dashboard}>
-       <div
-        className={`
+        <div
+          className={`
             px-4 pb-2 flex items-center
             justify-between mb-2
             border-b-2 border-secondary 
           `}
-      >
-        <TextH className={"text-muted-foreground"} v="h5">
-          Dashboard
-        </TextH>
-        <LayoutDashboard size={13.5} />
-      </div>
+        >
+          <TextH className={"text-muted-foreground"} v="h5">
+            Dashboard
+          </TextH>
+          <LayoutDashboard size={13.5} />
+        </div>
       </Link>
 
       {data.map((item, i) => (
