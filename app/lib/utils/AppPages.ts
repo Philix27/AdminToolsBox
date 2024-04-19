@@ -4,13 +4,13 @@ export class AppPages {
   static integrations = "/integrations"
 
   static frontend = {
+    cypress: "/frontend/cypress",
+    githubActions: "/frontend/github",
+    graphql: "/frontend/graphql",
+    restApi: "/frontend/rest-api",
+    sentry: "/frontend/sentry",
     storybook: "/frontend/storybook",
     vitest: "/frontend/vitest",
-    cypress: "/frontend/cypress",
-    sentry: "/frontend/sentry",
-    githubActions: "/frontend/github",
-    graphql: "/frontend/gql",
-    restApi: "/frontend/gql",
   }
 
   static backend = {

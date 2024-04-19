@@ -9,15 +9,6 @@ export type ISection = {
 }
 export const data: ISection[] = [
   {
-    title: "Account",
-    group: [
-      {
-        name: "Overview",
-        link: AppPages.dashboard,
-      },
-    ],
-  },
-  {
     title: "Frontend",
     group: [
       {
@@ -39,6 +30,14 @@ export const data: ISection[] = [
       {
         name: "Graphql",
         link: AppPages.frontend.graphql,
+      },
+      {
+        name: "Sentry",
+        link: AppPages.frontend.sentry,
+      },
+      {
+        name: "Rest Api",
+        link: AppPages.frontend.restApi,
       },
     ],
   },

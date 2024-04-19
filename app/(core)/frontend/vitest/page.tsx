@@ -5,5 +5,5 @@ import { AppIFrame } from "@/(core)/_comps/Iframe"
 import { StylesUtils } from "@/lib"
 
 export default function StorybookPage() {
-  return <AppIFrame url="http://localhost:5100/" />
+  return <AppIFrame url="http://localhost:51205/__vitest__/#/" />
 }
